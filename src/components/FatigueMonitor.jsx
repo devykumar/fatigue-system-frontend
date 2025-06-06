@@ -26,7 +26,7 @@ const FatigueMonitor = () => {
     });
 
     // Open WebSocket
-    ws.current = new WebSocket('wss://fatigue-backend-app-geege8hxdnccchca.canadacentral-01.azurewebsites.net/ws/fatigue');
+    ws.current = new WebSocket('wss://fatique-backend-app-ajc0eeduacbggcec.canadacentral-01.azurewebsites.net/ws/fatigue');
     ws.current.onmessage = (event) => {
       const data = JSON.parse(event.data);
       setStatus(data.status || 'Unknown');
